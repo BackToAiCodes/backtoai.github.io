@@ -19,7 +19,8 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #5a5a5a;
+  /* --color-primary: #5a5a5a; */
+  --color-primary: black;
   --color-secondary: #f85a40;
 }
 

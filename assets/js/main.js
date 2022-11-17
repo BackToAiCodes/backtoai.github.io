@@ -289,4 +289,20 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  /**
+   * Search On Google.com
+   */
+  const form = document.getElementById('search-form');
+  const query = document.getElementById('search-query');
+  const google = 'https://www.google.com/search?q=';
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + '+' + query.value;
+    const win = window.open(url, '_blank');
+    query.value = "";
+    win.focus();
+  }
+
+  form.addEventListener('submit', submitted);
+
 });
